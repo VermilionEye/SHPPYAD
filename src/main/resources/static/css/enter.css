@@ -1,0 +1,86 @@
+main{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logForm{
+    border-radius: 20px;
+    backdrop-filter: opacity(80%);
+    width: 25%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #693a3a;
+}
+
+.logForm h2{
+    margin-left: 10px;
+}
+
+.logForm p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.textInput input{
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    background: #674439;
+    border: rgb(128, 128, 128);
+    height: 30px;
+    width: 340px;
+}
+
+.shineButton {
+    padding: 10px 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    border: 2px solid #a45462;
+    border-radius: 8px;
+    font-size: 25px;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+.shineButton:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -1%;
+    left: -100%;
+}
+
+.shineButton:hover {
+    background: #5e333b;
+    color: #595656;
+}
+
+.shineButton:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+}
+
+
+.buttonSmaller {
+    width: 200px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5e333b;
+    color: #fff;
+    border: 2px solid #a45462;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.buttonSmaller:hover {
+    transform: scale(1.1);
+}
